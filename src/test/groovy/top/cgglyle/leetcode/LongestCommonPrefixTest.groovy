@@ -16,6 +16,8 @@ class LongestCommonPrefixTest extends Specification {
         where:
         question | finalAnswer
         ["flower","flow","flight"] | "fl"
+        ["flower","flow","floight"] | "flo"
+        ["flowersss","flowerss","flowerss"] | "flowerss"
         ["a"] | "a"
     }
 }
